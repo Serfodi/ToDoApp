@@ -99,12 +99,10 @@
 		B0C9DE982A1E7F2800463A92 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				B0C9DE992A1E7F2800463A92 /* AppDelegate.swift */,
-				B0C9DE9B2A1E7F2800463A92 /* SceneDelegate.swift */,
-				B0C9DE9D2A1E7F2800463A92 /* ViewController.swift */,
-				B0C9DE9F2A1E7F2800463A92 /* Main.storyboard */,
-				B0C9DEA22A1E7F2A00463A92 /* Assets.xcassets */,
-				B0C9DEA42A1E7F2A00463A92 /* LaunchScreen.storyboard */,
+				B0C9DECB2A1E7F6600463A92 /* Controller */,
+				B0C9DECA2A1E7F6000463A92 /* View */,
+				B0C9DEC92A1E7F5800463A92 /* Model */,
+				B0C9DECC2A1E7F9700463A92 /* Suppurting file */,
 				B0C9DEA72A1E7F2A00463A92 /* Info.plist */,
 			);
 			path = ToDoApp;
@@ -125,6 +123,40 @@
 				B0C9DEBC2A1E7F2A00463A92 /* ToDoAppUITestsLaunchTests.swift */,
 			);
 			path = ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		B0C9DEC92A1E7F5800463A92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0C9DECA2A1E7F6000463A92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0C9DECB2A1E7F6600463A92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9DE9D2A1E7F2800463A92 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B0C9DECC2A1E7F9700463A92 /* Suppurting file */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9DE992A1E7F2800463A92 /* AppDelegate.swift */,
+				B0C9DE9B2A1E7F2800463A92 /* SceneDelegate.swift */,
+				B0C9DE9F2A1E7F2800463A92 /* Main.storyboard */,
+				B0C9DEA22A1E7F2A00463A92 /* Assets.xcassets */,
+				B0C9DEA42A1E7F2A00463A92 /* LaunchScreen.storyboard */,
+			);
+			path = "Suppurting file";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,11 +472,13 @@
 				DEVELOPMENT_TEAM = VJ7AN5PN54;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,11 +502,13 @@
 				DEVELOPMENT_TEAM = VJ7AN5PN54;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
