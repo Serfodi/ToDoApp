@@ -23,8 +23,6 @@ struct Task {
         self.location = location
     }
     
-    
-    
 }
 
 extension Task: Equatable {
