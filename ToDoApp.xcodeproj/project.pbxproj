@@ -26,6 +26,7 @@
 		B0C9DEE02A1FC62E00463A92 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9DEDF2A1FC62E00463A92 /* DataProvider.swift */; };
 		B0C9DEE22A1FC8BF00463A92 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9DEE12A1FC8BF00463A92 /* DataProviderTests.swift */; };
 		B0C9DEE42A1FCD8000463A92 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9DEE32A1FCD8000463A92 /* TaskCell.swift */; };
+		B0C9DEE72A21396E00463A92 /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9DEE62A21396E00463A92 /* TaskCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		B0C9DEDF2A1FC62E00463A92 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		B0C9DEE12A1FC8BF00463A92 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		B0C9DEE32A1FCD8000463A92 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		B0C9DEE62A21396E00463A92 /* TaskCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		B0C9DEAF2A1E7F2A00463A92 /* ToDoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				B0C9DEE52A21394800463A92 /* View */,
 				B0C9DEDC2A1FC1EA00463A92 /* Controller */,
 				B0C9DED62A1FA7CF00463A92 /* Manager */,
 				B0C9DEB02A1E7F2A00463A92 /* ToDoAppTests.swift */,
@@ -219,6 +222,14 @@
 				B0C9DEDD2A1FC20000463A92 /* TaskListViewControllerTests.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B0C9DEE52A21394800463A92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9DEE62A21396E00463A92 /* TaskCellTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +380,7 @@
 			files = (
 				B0C9DECE2A1E88A200463A92 /* TaskTest.swift in Sources */,
 				B0C9DEB12A1E7F2A00463A92 /* ToDoAppTests.swift in Sources */,
+				B0C9DEE72A21396E00463A92 /* TaskCellTests.swift in Sources */,
 				B0C9DEE22A1FC8BF00463A92 /* DataProviderTests.swift in Sources */,
 				B0C9DED82A1FA7F900463A92 /* TaskManagerTests.swift in Sources */,
 				B0C9DEDE2A1FC20000463A92 /* TaskListViewControllerTests.swift in Sources */,

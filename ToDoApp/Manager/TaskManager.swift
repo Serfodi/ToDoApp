@@ -31,9 +31,15 @@ class TaskManager {
     }
     
     func chekTask(at index: Int) {
-        let task = tasks.remove(at: index)
+          let task = tasks.remove(at: index)
         doneTasks.append(task)
     }
+    
+    func unchekTask(at index: Int) {
+          let task = doneTasks.remove(at: index)
+        tasks.append(task)
+    }
+    
     
     func doneTasks(at index: Int) -> Task {
         return doneTasks[index]
