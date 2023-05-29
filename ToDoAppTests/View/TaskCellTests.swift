@@ -58,7 +58,7 @@ final class TaskCellTests: XCTestCase {
         //    http://nsdateformatter.com
         df.dateFormat = "dd.MM.yy"
         let date = task.date
-        let dateString = df.string(from: date!)
+        let dateString = df.string(from: date)
         
         XCTAssertEqual(cell.dataLabel.text, dateString)
     }

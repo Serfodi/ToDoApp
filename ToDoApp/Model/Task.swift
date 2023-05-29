@@ -11,15 +11,16 @@ struct Task {
     
     let title: String
     let description: String?
-    private(set) var date: Date?
+    let date: Date 
     let location: Location?
     
     init(title: String,
          description: String? = nil,
+         date: Date? = nil,
          location: Location? = nil) {
         self.title = title
         self.description = description
-        self.date = Date()
+        self.date = date ?? Date()
         self.location = location
     }
     
