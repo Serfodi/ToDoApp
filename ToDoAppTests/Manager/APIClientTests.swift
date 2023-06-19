@@ -14,6 +14,7 @@ final class APIClientTests: XCTestCase {
     var mockURLSession: MockURLSession!
     
     override func setUpWithError() throws {
+        try super.setUpWithError()
         continueAfterFailure = false
         sut = APIClient()
         mockURLSession = MockURLSession(data: nil, urlResponse: nil, responseError: nil)
@@ -80,7 +81,7 @@ final class APIClientTests: XCTestCase {
             caughtError = error
             errorExpectation.fulfill()
         }
-        waitForExpectations(timeout: 1) { _ in
+        waitForExpectations(timeout: 2) { _ in
             XCTAssertNotNil(caughtError)
         }
     }

@@ -112,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B00021C12A3DF338002FC1AC /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9DEB02A1E7F2A00463A92 /* ToDoAppTests.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		B0A88E862A3CB09500B1876D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +169,7 @@
 				B0C9DEE52A21394800463A92 /* View */,
 				B0C9DEDC2A1FC1EA00463A92 /* Controller */,
 				B0C9DED62A1FA7CF00463A92 /* Manager */,
-				B0C9DEB02A1E7F2A00463A92 /* ToDoAppTests.swift */,
+				B00021C12A3DF338002FC1AC /* Supporting files */,
 			);
 			path = ToDoAppTests;
 			sourceTree = "<group>";

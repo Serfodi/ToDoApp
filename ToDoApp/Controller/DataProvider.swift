@@ -30,6 +30,21 @@ extension DataProvider: UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let section = Section(rawValue: indexPath.section) else { fatalError() }
+        switch section {
+        case .todo:
+            let task = taskManager?.task(at: indexPath.row)
+            NotificationCenter.default.post(name: NSNotification.Name("DidSelectRownotification"), object: self, userInfo: ["task": task])
+        case .done: break
+        }
+    }
+    
+    // Написать тест
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section: \(section)"
+    }
+    
 }
 
 extension DataProvider: UITableViewDataSource {
@@ -56,7 +71,7 @@ extension DataProvider: UITableViewDataSource {
         case .done: task = taskManager.doneTasks(at: indexPath.row)
         }
         
-        cell.configure(withTask: task)
+        cell.configure(withTask: task, done: task.isDone)
         return cell
     }
     
